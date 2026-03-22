@@ -99,7 +99,73 @@ footer {
     border: none !important;
 }
 
-.edit-btn{
-    background-color: #fe424d !important;
+/* Listing Details Page Styles */
+.listing-page-title {
+    font-size: 2.5rem !important;
+    font-weight: 700 !important;
+    color: #222222 !important;
+    margin-bottom: 2rem !important;
+}
+
+.listing-detail-image {
+    height: 40vh !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+}
+
+.listing-info-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    border-radius: 1rem !important;
+    overflow: hidden !important;
     border: none !important;
+}
+
+.listing-detail-body {
+    padding: 1.2rem !important;
+}
+
+.listing-detail-title {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #222222 !important;
+    margin-bottom: 0.6rem !important;
+}
+
+.listing-detail-description {
+    font-size: 0.95rem !important;
+    color: #555555 !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.8rem !important;
+}
+
+.price-badge {
+    background-color: #f0f8ff !important;
+    padding: 0.7rem 1rem !important;
+    border-radius: 0.5rem !important;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: #fe424d !important;
+    border-left: 4px solid #fe424d !important;
+    display: inline-block !important;
+    margin-bottom: 0.8rem !important;
+}
+
+.listing-detail-location {
+    font-size: 0.95rem !important;
+    color: #222222 !important;
+    margin-bottom: 0.3rem !important;
+    font-weight: 500 !important;
+}
+
+.listing-detail-country {
+    font-size: 0.95rem !important;
+    color: #666666 !important;
+    margin-bottom: 1rem !important;
+}
+
+.listing-actions {
+    display: flex !important;
+    gap: 0.8rem !important;
+    margin-top: 1.2rem !important;
 }
