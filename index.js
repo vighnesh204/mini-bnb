@@ -99,5 +99,5 @@ app.listen(PORT, ()=>{
 
 // default route
 app.get('/', (req, res)=>{
-    res.send(`<h1>Welcome to DB Project 1</h1>`)
+    res.send(`<h1>Welcome to Home page</h1>`)
 });
