@@ -18,26 +18,38 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots  
 
 <div align="center">
 
-### 🗂️ All Listings Page
-![All Listings](https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=900&h=450&fit=crop)
+### 🗂️ All Listings Page  
+<img src="./pics/listings.png" alt="All Listings" width="800"/>
 
 > Browse all available vacation rentals with beautiful card layouts featuring images, titles, and per-night pricing.
 
 <br/>
 
-### 🏡 Featured Properties
+### 🏡 Featured Properties  
 
-| Ocean Breeze Cottage | Modern City Loft | Mountain Escape Cabin |
-|---|---|---|
-| ![Cottage](https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=300&h=200&fit=crop) | ![Loft](https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=300&h=200&fit=crop) | ![Cabin](https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=300&h=200&fit=crop) |
-| ₹1,700 / night | ₹1,400 / night | ₹1,100 / night |
+<table>
+  <tr>
+    <th>Ocean Breeze Cottage</th>
+    <th>Modern City Loft</th>
+    <th>Mountain Escape Cabin</th>
+  </tr>
+  <tr>
+    <td><img src="./pics/ocean.png" width="250"/></td>
+    <td><img src="./pics/loft.png" width="250"/></td>
+    <td><img src="./pics/cabin.png" width="250"/></td>
+  </tr>
+  <tr>
+    <td align="center">₹1,700 / night</td>
+    <td align="center">₹1,400 / night</td>
+    <td align="center">₹1,100 / night</td>
+  </tr>
+</table>
 
 </div>
-
 ---
 
 ## ✨ Features
@@ -68,23 +80,34 @@
 ---
 
 ## 📁 Project Structure
-
+ 
 ```
-mini-bnb/
-├── models/
-│   └── listing.js          # Mongoose schema & model
+DB-Project-1/
+├── init/                          # Database initialization scripts
+├── models/                        # Mongoose models
+├── pics/                          # Project images / assets
+├── public/
+│   └── css/
+│       └── style.css              # Global stylesheet
 ├── views/
+│   ├── includes/
+│   │   ├── navbar.ejs             # Navbar partial
+│   │   └── footer.ejs             # Footer partial
+│   ├── layouts/
+│   │   └── boilerplate.ejs        # EJS-Mate layout wrapper
 │   └── listings/
-│       ├── index.ejs        # All listings page
-│       ├── show.ejs         # Individual listing page
-│       ├── new.ejs          # Add new listing form
-│       └── edit.ejs         # Edit listing form
-├── public/                  # Static assets (CSS, JS, images)
-├── .env                     # Environment variables (not committed)
-├── index.js                 # Main application entry point
-└── package.json
+│       ├── index.ejs              # All listings page
+│       ├── show.ejs               # Individual listing detail page
+│       ├── new.ejs                # Add new listing form
+│       └── edit.ejs               # Edit listing form
+├── .env                           # Environment variables (not committed)
+├── .gitignore                     # Git ignored files
+├── index.js                       # Main application entry point
+├── index.txt                      # Notes / reference file
+├── package.json                   # Project metadata & scripts
+└── package-lock.json              # Dependency lock file
 ```
-
+ 
 ---
 
 ## 🚀 Getting Started
@@ -101,7 +124,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/mini-bnb.git
+   git clone https://github.com/vighnesh204/mini-bnb.git
    cd mini-bnb
    ```
 
